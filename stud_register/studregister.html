@@ -1,0 +1,140 @@
+<html>
+	<head>
+		<title>MK Forms</title>
+		<script type="text/javascript" src="valid.js"></script>
+		<form action="b.html" target="_blank">
+
+	</head>
+
+	<body> 
+
+		<form action="studregister.html" name="StudentRegistration" onsubmit="return(validate());">
+
+			<table border="1"  width="20%" align="center">
+
+				<tr>
+				<td colspan=2>
+					<center><font size=4><b>Student Registration Form</b></font></center>
+				</td>
+				</tr>
+
+				<tr>
+				<td>Name</td>
+				<td>
+					<input type=text name=textnames id="textnames" size="30">
+				</td>
+				</tr>
+
+				<tr>
+				<td>Father Name</td>
+				<td>
+					<input type="text" name="fathername" id="fathername"size="30">
+				</td>
+				</tr>
+
+				<tr>
+				<td>Surname</td>
+				<td>
+					<input type="text" name="surname" id="surname"size="30">
+				</td>
+				</tr>
+
+
+				<tr>
+				<td>Address</td>
+				<td>
+					<input type="text" name="paddress" id="paddress" size="30">
+				</td>
+				</tr>
+
+				<tr>
+				<td>Personal Address</td>
+				<td>
+					<input type="text" name="personaladdress" id="personaladdress" size="30">
+				</td>
+				</tr>
+				
+				<tr>
+				<td>Gender</td>
+				<td>
+					<input type="radio" name="gender" value="Male" size="10">Male
+					<input type="radio" name="gender" value="Female" size="10">Female
+				</td>
+				</tr>
+
+				<tr>
+				<td>City</td>
+				<td><select name="City">
+					<option value="-1" selected>select..	</option>
+					<option value="Pune">Pune</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="Chennai">Chennai</option>
+					<option value="Kolkata">Kolkata</option>
+				</select></td>
+				</tr>
+
+				<tr>
+				<td>Course</td>
+				<td><select name="SelectCourse">
+					<option value="-1" selected>select..</option>
+					<option value="B.Tech">B.Tech</option>
+					<option value="B.E.">B.E.</option>
+					<option value="BBA">BBA</option>
+					<option value="BCA">BCA</option>
+				</select></td>
+				</tr>
+
+				<tr>
+				<td>District</td>
+				<td><select name="District">
+				<option value="-1" selected>select..</option>
+				<option value="Solapur">Solapur</option>
+				<option value="Pune">Pune</option>
+				<option value="Amravati">Amravati</option>
+				<option value="Akola">Akola</option>
+				</select></td>
+
+				</tr>
+
+				<tr>
+				<td>State</td>
+				<td><select Name="State">
+				<option value="-1" selected>select..</option>
+				<option value="Maharashtra">Maharashtra</option>
+				<option value="Karnataka">Karnataka</option>
+				<option value="Tamil Nadu">Tamil Nadu</option>
+				<option value="Madhya Pradesh">Madhya Pradesh</option>
+				</select></td>
+				</tr>
+
+				<tr>
+				<td>PinCode</td>
+				<td><input type="text" name="pincode" id="pincode" size="30"></td>
+
+				</tr>
+				<tr>
+				<td>EmailId</td>
+				<td><input type="text" name="emailid" id="emailid" size="30"></td>
+				</tr>
+
+				<tr>
+				<td>Birthdate</td>
+				<td><input type="date" name="date" id="name"
+				size="30"></td>
+				</br>
+				</tr>
+
+				<tr>
+				<td>MobileNo</td>
+				<td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+				</tr>
+				<tr>
+				<td><input type="reset"></td>
+				<td colspan="2"><input type="submit" value="Submit Form" /></td>
+				</tr>
+			</table>
+		</form>
+
+	</body>
+</html>
+
