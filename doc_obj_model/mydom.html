@@ -1,0 +1,69 @@
+<html>
+	<body>
+		<center>
+
+			<h5>Click on Check Time</h5>
+			<button onclick="displayDate()"> Check Time !</button>
+			<script >
+
+				function displayDate() 
+				{
+					document.getElementById("demo").innerHTML = Date();
+					  alert("Do you want to Display Date? ");
+
+
+				}
+			</script>
+			<p id="demo"></p>
+
+
+
+			<h1>Want to change the Image ???</h1>
+			<img id="hackerimage" src="Image.jpg" width="300" height="200">
+			<br><button onclick="changeImage()">Try it</button>
+			<script>
+				function changeImage() 
+				{
+	  				document.getElementById("hackerimage").src = "hacker.gif";
+				}
+
+			</script>
+
+
+			<br><img id="coinFlip" src="coin.jpg" width="100" height="100">
+			<br><button onclick="coinFlip()">Flip Coin</button>
+			<script>
+				function coinFlip() 
+				{	
+					(Math.floor(Math.random() * 2) == 0) ? alert('heads') : alert ('tails');
+				}
+			</script>
+
+		<script type="text/javascript">
+			function setBodyAttr(attr,value)
+			{
+				if(document.body)
+					eval('document.body.'+attr+'= "'+value'"');
+				else
+					notSupported();
+			}
+
+
+		</script>
+		<select style ="font-size: 20px; width: 100px; height: 25px;"
+			onchange="setBodyAttr('text',this.options[this.selectedIndex].value);">	
+			  <option value="Red">Red
+			  <option value="Blue">Blue
+			  <option value="Yellow">Yellow
+			  <option value="Black">Black
+			</select>
+
+		<font size=10>Text Color &nbsp; &nbsp; &nbsp; </font>
+			<p id="demo">Hello World</p>
+
+
+
+
+		</center>
+	</body>
+</html> 
